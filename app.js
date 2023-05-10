@@ -96,6 +96,7 @@ let dinnerElements = [];
 let divEl, menuItem, imgEl, labelEl, spanEl, h5EL, pEL;
 
 function displayElements(arrayOfElements) {
+  sectionEl.innerHTML = "";
   breakfastElements = arrayOfElements.filter((obj) => {
     if (obj.tag == "breakfast") {
       return obj;
